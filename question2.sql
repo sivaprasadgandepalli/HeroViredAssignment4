@@ -2,13 +2,13 @@ create database Football
 create table FootBallVenue(
 venue_id int not null primary key,
 venue_name varchar(30) not null,
-city_id varchar(30) not null,
+city_id int not null,
 capacity int not null
 );
 insert into FootballVenue(venue_id,venue_name,city_id,capacity)
 values
-(1,"india","110023",114000),
-(2,"France","120024",99354),
+(1,"india",110023,114000),
+(2,"France",120024,99354),
 (3,"Italy",114490,94736),
 (4,"Russia",142278,92356),
 (5,"Japan",241321,78908),
